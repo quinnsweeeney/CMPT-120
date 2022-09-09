@@ -5,6 +5,12 @@
 
 
 def main():
+    print("Hello World")
+    color = "purple"
+    print("My favorite color is: ", color)
+    dob= 4272004
+    print("My birthday is: ", dob)
+
 
 
 
