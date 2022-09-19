@@ -6,4 +6,14 @@
 
 def main():
 
+    hatred = 10
+    if hatred > 12:
+        print("10 is greater than 12")
+    elif hatred > 11:
+        print("10 is greater than 11")
+    elif hatred == 10:
+        print("10 is equal to 10")
+    else:
+        print("10 is less than 10")
+
 main()
