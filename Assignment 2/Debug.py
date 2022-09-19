@@ -9,20 +9,21 @@ def main():
 
     #this isn't printing anything :( so sad. what's wrong with her? Why she not printing out?
     color = input("what's your favorite color? ")
+    print("Hello", color)
     
     #I thought i did this right :( can you fix it for me?
     age = input("how old are you? ")
-    print("You are " + age + " years old")
-	
+    print("You are ", age, "years old")
+
     #Start with this one! We have a compilation error :(
     #Side note: you can put these statements in parentheses or not. it's up to you.
-    if (5 > 3)
+    if 5 > 3:
         print("5 is greater than 3")
     
     #There are multiple correct answers and adjustments to this one 
-    isFive = 5
+    isFive = 6
     if isFive > 5:
-        print("isFive is greater than 5")
+        print("is Five is greater than 5")
     else:
         print("isFive is less than 5")
 
@@ -31,18 +32,19 @@ def main():
     if toCheck > 5:
         print(toCheck, "is greater than 5.")
     elif toCheck < 3:
-	    print(toCheck)
+	    print(toCheck, "is less than 3")
     else:
-        print(toCheck, "is 3")
+        print(toCheck, "is between 3 and 4")
 
     #Is it really printing the BEST option though? Rearrange these as you see fit
     toCheck = 5
-    if toCheck < 6:
-        print("toCheck is less than 6")
-    elif toCheck > 7:
+
+    if toCheck > 7:
         print("toCheck is greater than 7")
     elif toCheck == 5:
         print("toCheck is 5")
+    elif toCheck < 6:
+        print("toCheck is less than 6")
     else:
         print("toCheck is invalid")
     
