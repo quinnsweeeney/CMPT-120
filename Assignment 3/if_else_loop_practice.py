@@ -11,6 +11,7 @@ else (the number is less than 5)
 '''
 
 def main():
-    
-    
+
+    numbers = [34, 21, 13, 12, 19, 44, 39, 2]
+    for x in numbers:
 main()
