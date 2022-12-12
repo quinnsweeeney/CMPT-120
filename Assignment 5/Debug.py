@@ -8,14 +8,14 @@ def main():
         
     #can you google and find what function you should use to check if it's numeric (an int?)?
     intInput = input("enter an int")
-    if intInput.?:
+    if intInput.isdigit():
         print("int!")
     else:
         print("not int :(")
     
     #what about if it's both letters and numbers?
     alphIntInput = input("Enter letters and numbers")
-    if alphIntInput.?:
+    if alphIntInput.isalnum():
         print("Letters and numbers!")
     else:
         print("weird characters :(")
@@ -27,12 +27,27 @@ def main():
     else:
         print("not asterisk :(")
         
-    #now write code to check if the input was either an asterisk OR an ampersand (&)
-    
+    # now write code to check if the input was either an asterisk OR an ampersand (&)
+    asteriskOrAmpersand = input("Enter an asterisk or ampersand please")
+    if asteriskOrAmpersand in ["*", "&"]:
+        print("good!")
+    else:
+        print("that's not asterisk or ampersand :(")
         
     #do the live example we did in class: ask user to input an integer, but before you cast it to an int, check that it's an integer before doing your variable = int(variable) command
-    
-    # last challenge: find out how to check if the string input has the substring "marist"
+    userInput = input("Enter an integer")
+    if userInput.isdigit():
+        userInput = int(userInput)
+    else:
+        print("Not an integer :(")
+
+    #last challenge: find out how to check if the string input has the substring "marist"
     #google this one ;) substring is the key google term
-    
+    stringInput = input("Enter a string")
+    if "marist" in stringInput:
+        print("The string contains 'marist'")
+    else:
+        print("The string does not contain 'marist'")
+
+
 main()
