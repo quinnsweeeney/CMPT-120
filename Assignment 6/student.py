@@ -24,15 +24,45 @@ create a function because this college is a wacky one- every day they generate a
 (disclosure: obviously there's a very small chance of your generated number matching the student id number. I just want to see that you're generating and comparing properly)
 '''
 
+import random
+
+
 class student:
-    
-    
-    
-    
-    
-    
+    def __init__(self, name, student_id, year, major, gpa):
+        self.name = name
+        self.student_id = student_id
+        self.year = year
+        self.major = major
+        self.gpa = gpa
+
+    def is_eligible_for_honors(self):
+        if self.gpa > 3.5:
+            print({self.name} is eligible for honors.")
+            return True
+        else:
+            print({self.name} is not eligible for honors.")
+            return False
+
+    def get_free_food(self):
+        random_id = random.randint(1, 100000)
+        if random_id == self.student_id:
+            print("Winner! Student {self.name} gets free lunch!")
+            return True
+        else:
+            print("Loser!")
+            return False
+
+
 def main():
-    #create three students and check if they get free lunch and if they qualify for honors
-    
-    
-main()
+    # create three students and check if they get free lunch and if they qualify for honors
+    s1 = student("Vhani", 11111, "Freshman", "Psychology", 3.7)
+    s1.is_eligible_for_honors()
+    s1.get_free_food()
+
+    s2 = student("Olivia", 32993, "Senior", "Biomedical Science", 1.9)
+    s2.is_eligible_for_honors()
+    s2.get_free_food()
+
+    s3 = student("Ava", 69420, "Sophomore", "Philosophy", 2.5)
+    s3.is_eligible_for_honors()
+    s3.get_free_food()
