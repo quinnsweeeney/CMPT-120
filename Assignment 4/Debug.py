@@ -1,9 +1,10 @@
 
 def printHello():
     print("Hello")
-    
-def printName(Quinn):
-    print(Quinn)
+
+
+def printName():
+    print("Quinn")
     
 def addition(x, y):
     #add x and y together and return them
@@ -14,19 +15,18 @@ def smaller(i, j):
     #if j is smaller than i, return j
     #if they're even, return 0
     if i < j:
-        return(i)
+        return i
     elif j < i:
-        return(j)
+        return j
     else:
-        return(0)
+        return 0
 def main():
 
     #call the printHello function here
-def printHello():
+    printHello()
 
     #call printName and give it the parameter of your name
-def printName():
-    printName("Quinn")
+    printName()
 
 
 
