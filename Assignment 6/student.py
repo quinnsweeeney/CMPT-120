@@ -37,20 +37,16 @@ class student:
 
     def is_eligible_for_honors(self):
         if self.gpa > 3.5:
-            print({self.name} is eligible for honors.")
-            return True
+            print("{self.name} is eligible for honors.")
         else:
-            print({self.name} is not eligible for honors.")
-            return False
+            print({"{self.name} is not eligible for honors."})
 
     def get_free_food(self):
         random_id = random.randint(1, 100000)
         if random_id == self.student_id:
             print("Winner! Student {self.name} gets free lunch!")
-            return True
         else:
             print("Loser!")
-            return False
 
 
 def main():
